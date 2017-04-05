@@ -7,7 +7,7 @@ package br.calebe.ticketmachine.exception;
 public class SaldoInsuficienteException extends Exception {
 
   public SaldoInsuficienteException() {
-     super("Saldo não é suficiente");
+     super("Saldo não é suficiente!!!!");
   }
 
 }
