@@ -10,41 +10,37 @@ import java.util.Iterator;
 class Troco {
 
     protected PapelMoeda[] papeisMoeda;
-
-    public Troco(int valor) {
-        papeisMoeda = new PapelMoeda[6];
-        int count = 0;
-        while (valor % 100 != 0) {
-            count++;
-        }
-        papeisMoeda[5] = new PapelMoeda(100, count);
-        count = 0;
-        while (valor % 50 != 0) {
-            count++;
-        }
-        papeisMoeda[4] = new PapelMoeda(50, count);
-        count = 0;
-        while (valor % 20 != 0) {
-            count++;
-        }
-        papeisMoeda[3] = new PapelMoeda(20, count);
-        count = 0;
-        while (valor % 10 != 0) {
-            count++;
-        }
-        papeisMoeda[2] = new PapelMoeda(10, count);
-        count = 0;
-        while (valor % 5 != 0) {
-            count++;
-        }
-        papeisMoeda[1] = new PapelMoeda(5, count);
-        count = 0;
-        while (valor % 2 != 0) {
-            count++;
-        }
-        papeisMoeda[1] = new PapelMoeda(2, count);
-    }
-
+    private int size;
+    private int valor;
+  public Troco(int valor) {
+          papeisMoeda = new PapelMoeda[size];
+         int count = 0;
+         while (valor % 100 != 0) {
+             count++;
+         }
+         papeisMoeda[5] = new PapelMoeda(100, count);
+         while (valor % 50 != 0) {
+             count++;
+         }
+         papeisMoeda[4] = new PapelMoeda(50, count);
+         while (valor % 20 != 0) {
+             count++;
+         }
+         papeisMoeda[3] = new PapelMoeda(20, count);
+         while (valor % 10 != 0) {
+             count++;
+         }
+         papeisMoeda[2] = new PapelMoeda(10, count);
+         while (valor % 5 != 0) {
+             count++;
+         }
+         papeisMoeda[1] = new PapelMoeda(5, count);
+         while (valor % 2 != 0) {
+             count++;
+         }
+         papeisMoeda[0] = new PapelMoeda(2, count);
+       this.valor = valor;
+      }
     public Iterator<PapelMoeda> getIterator() {
         return new TrocoIterator(this);
     }
