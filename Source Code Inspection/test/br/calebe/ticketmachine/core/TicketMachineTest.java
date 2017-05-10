@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Ivan
+ *   @author Ivan
  */
 public class TicketMachineTest {
     
