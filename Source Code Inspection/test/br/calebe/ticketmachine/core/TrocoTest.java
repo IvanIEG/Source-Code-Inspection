@@ -11,12 +11,12 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Ivan
+ *    @author Ivan
  */
 public class TrocoTest {
 
     @Test
-    public TrocoTest() {
+    public TrocoTest(){
         
         int valor = 100;
         Troco troco = new troco(valor);
