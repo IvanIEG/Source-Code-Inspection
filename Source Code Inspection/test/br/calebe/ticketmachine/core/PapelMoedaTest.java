@@ -8,7 +8,7 @@ import org.junit.Test;
 
 /**
  *
- * @author Ivan
+ *      @author Ivan
  */
 public class PapelMoedaTest {
     
